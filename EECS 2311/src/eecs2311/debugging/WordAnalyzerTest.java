@@ -10,33 +10,33 @@ public class WordAnalyzerTest {
     @Test
     public void testFirstRepeatedCharacter() {
         wa = new WordAnalyzer("aardvark");
-        assertSame('a', wa.firstRepeatedCharacter());
+        assertEquals('a', wa.firstRepeatedCharacter());
         wa = new WordAnalyzer("roommate");
-        assertSame('o', wa.firstRepeatedCharacter());
+        assertEquals('o', wa.firstRepeatedCharacter());
         wa = new WordAnalyzer("mate");
-        assertSame(0, wa.firstRepeatedCharacter());
+        assertEquals(0, wa.firstRepeatedCharacter());
         wa = new WordAnalyzer("test");
-        assertSame(0, wa.firstRepeatedCharacter());        
+        assertEquals(0, wa.firstRepeatedCharacter());        
     }
 
     @Test
     public void testFirstMultipleCharacter() {
         wa = new WordAnalyzer("mississippi");
-        assertSame('i', wa.firstMultipleCharacter());
+        assertEquals('i', wa.firstMultipleCharacter());
         wa = new WordAnalyzer("mate");
-        assertSame(0, wa.firstMultipleCharacter());
+        assertEquals(0, wa.firstMultipleCharacter());
         wa = new WordAnalyzer("test");
-        assertSame('t', wa.firstMultipleCharacter());
+        assertEquals('t', wa.firstMultipleCharacter());
     }
 
     @Test
     public void testCountRepeatedCharacters() {
         wa = new WordAnalyzer("mississippiii");
-        assertSame(4, wa.countRepeatedCharacters());
+        assertEquals(4, wa.countRepeatedCharacters());
         wa = new WordAnalyzer("test");
-        assertSame(0, wa.countRepeatedCharacters());
+        assertEquals(0, wa.countRepeatedCharacters());
         wa = new WordAnalyzer("aabbcdaaaabb");
-        assertSame(4, wa.countRepeatedCharacters());
+        assertEquals(4, wa.countRepeatedCharacters());
         
     }
 
