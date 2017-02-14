@@ -1,4 +1,4 @@
-package eecs2311.refactoring;
+package eecs2311.refactoring.original;
 
 import java.util.*;
 
@@ -21,7 +21,7 @@ public class Customer {
 	public String statement() {
 		double totalAmount = 0;
 		int frequentRenterPoints = 0;
-		Enumeration<Rental> rentals = _rentals.elements();
+		Enumeration rentals = _rentals.elements();
 		String result = "Rental Record for " + getName() + "\n";
 		while (rentals.hasMoreElements()){
 			double thisAmount = 0;

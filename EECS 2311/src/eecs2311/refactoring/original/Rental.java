@@ -1,4 +1,4 @@
-package eecs2311.refactoring;
+package eecs2311.refactoring.original;
 
 public class Rental {
 	private Movie _movie;

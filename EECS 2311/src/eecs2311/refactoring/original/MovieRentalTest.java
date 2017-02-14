@@ -1,4 +1,4 @@
-package eecs2311.refactoring;
+package eecs2311.refactoring.original;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
