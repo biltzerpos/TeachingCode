@@ -25,7 +25,7 @@ public class Customer {
 		String result = "Rental Record for " + getName() + "\n";
 		while (rentals.hasMoreElements()){
 			double thisAmount = 0;
-			Rental each = (Rental) rentals.nextElement();
+			Rental each = rentals.nextElement();
 			
 			//Determine amounts for each line
 			switch (each.getMovie().getPriceCode()) {
